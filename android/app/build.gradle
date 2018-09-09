@@ -95,8 +95,8 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.alphaonline"
@@ -140,12 +140,9 @@ android {
 dependencies {
     compile project(':react-native-vector-icons')
     compile project(':react-native-svg')
-    compile project(':react-native-splash-screen')
-    compile project(':react-native-push-notification')
     compile project(':react-native-firebase')
-    compile project(':react-native-code-push')
     compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:23.0.1"
+    compile "com.android.support:appcompat-v7:27.1.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
 
